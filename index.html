@@ -1,39 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio website">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio website" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">About</a>
+      <a class="navbar-brand" href="#">Projects</a>
+      <a class="navbar-brand" href="#">Contact</a>
+    </div>
+  </nav>
+
+  <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <h1>Welcome to My Portfolio</h1>
     </header>
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Write a brief introduction about yourself here.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Showcase your projects here.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Provide your contact information here.</p>
-        </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Write a brief introduction about yourself here.</p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>Showcase your projects here.</p>
+
+        <div class="card" style="width: 18rem">
+          <img src="assets/PantryPirateLogo.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Pantry Pirate</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card’s content.
+            </p>
+            <a href="https://github.com/j-davitt/PantryPirate-FE" class="btn btn-primary">Github</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img src="assets/WRDemo.gif" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Word Rummage</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card’s content.
+            </p>
+            <a href="https://github.com/j-davitt/PantryPirate-FE" class="btn btn-primary">Github</a>
+          </div>
+        </div>
+
+        <!-- <a href="https://github.com/j-davitt/WordRummage">Word Rummage</a>
+        <a href="https://github.com/Bite-Club-1989/Bite-Club-1989"
+          >Bite Club 1989</a
+        >
+        <a href="https://github.com/j-davitt/PantryPirate-FE">Pantry Pirate</a> -->
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Provide your contact information here.</p>
+      </section>
     </main>
     <footer>
-        <p>&copy; 2025 Joe Davitt. All rights reserved.</p>
+      <p>&copy; 2025 Joe Davitt. All rights reserved.</p>
     </footer>
-</body>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
