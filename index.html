@@ -6,20 +6,18 @@
     <meta name="description" content="Portfolio website" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <title>Portfolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png" />
   </head>
 
   <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">About</a>
-      <a class="navbar-brand" href="#">Projects</a>
-      <a class="navbar-brand" href="#">Contact</a>
+      <a class="navbar-brand" href="about.html">About</a>
     </div>
   </nav>
 
@@ -28,36 +26,71 @@
       <h1>Welcome to My Portfolio</h1>
     </header>
     <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>Write a brief introduction about yourself here.</p>
-      </section>
+      
       <section id="projects">
         <h2>Projects</h2>
-        <p>Showcase your projects here.</p>
+        <div id="project-container">
 
-        <div class="card" style="width: 18rem">
-          <img src="assets/PantryPirateLogo.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Pantry Pirate</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card’s content.
-            </p>
-            <a href="https://github.com/j-davitt/PantryPirate-FE" class="btn btn-primary">Github</a>
+          
+          <div class="card" style="width: 18rem">
+            <img src="assets/WRDemo.gif" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Word Rummage</h5>
+              <p class="card-text">
+                Word search game where the user will click through different
+                tables and will only gain points upon selecting actual words.
+                The game will continue to iterate until the participant runs out
+                of time.
+              </p>
+              <a
+              href="https://github.com/j-davitt/WordRummage"
+              class="btn btn-primary"
+              >Github</a
+              >
+            </div>
           </div>
-        </div>
+          
+          <div class="card" style="width: 18rem">
+            <img
+            src="assets/TriviaDemo1.gif"
+            class="card-img-top"
+            alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Terminal Trivia Trials</h5>
+              <p class="card-text">
+                A command line interface trivia game that allows the user to
+                select a category and difficulty level to play. Allows for
+                multiplayer lobbies in real time.
+              </p>
+              <a
+              href="https://github.com/j-davitt/trivia-backend-client"
+              class="btn btn-primary"
+              >Github</a
+              >
+            </div>
+          </div>
+          
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/PantryPirateLogo.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pantry Pirate</h5>
+              <p class="card-text">
+                A mobile app that allows user to create and share items for
+                shopping lists and pantries.
+              </p>
+              <a
+                href="https://github.com/j-davitt/PantryPirate-FE"
+                class="btn btn-primary"
+                >Github</a
+              >
+            </div>
+          </div>
 
-        <div class="card" style="width: 18rem">
-          <img src="assets/WRDemo.gif" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Word Rummage</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card’s content.
-            </p>
-            <a href="https://github.com/j-davitt/PantryPirate-FE" class="btn btn-primary">Github</a>
-          </div>
         </div>
 
         <!-- <a href="https://github.com/j-davitt/WordRummage">Word Rummage</a>
