@@ -5,31 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio website" />
     <title>About Me</title>
-    <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png" />
   </head>
-  <nav class="navbar bg-body-tertiary">
+  <nav class="navbar">
     <div class="container-fluid">
-      <!-- <a class="navbar-brand" href="about.html">About</a> -->
       <a class="navbar-brand" href="index.html">Back</a>
     </div>
   </nav>
 <body>
     <header>
-        <h1>About Me</h1>
+        <h1 class="header-banner">About Me</h1>
     </header>
     <main>
-        <p>Welcome to my portfolio! Here you can learn more about me and my work.</p>
-        <img src="assets/costume.JPG" alt="Portfolio Image" />
+        <p>Marine Corps veteran pursuing a career in software development.</p>
+        <img class="profile-img" src="assets/costume.JPG" alt="Portfolio Image" />
     </main>
     <footer>
+        <div class="footer">
+        <a class="btn btn-danger" href="#" onclick="clearPage()">Do Not Click</a>
         <p>&copy; 2025 Joe Davitt. All rights reserved.</p>
+      </div>
     </footer>
 </body>
 <script src="script.js"></script>

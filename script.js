@@ -20,3 +20,23 @@ function getRandomColor() {
     }
     return color;
 }
+
+// clear the page content
+function clearPage() {
+    document.body.innerHTML = '';
+}
+
+
+// grab random element on page and remove after timeout
+function clearPageRandomly() {
+    const elements = Array.from(document.body.children);
+    let delay = 2000;
+    while (elements.length > 0) {
+        const randomIndex = Math.floor(Math.random() * elements.length);
+        const element = elements.splice(randomIndex, 1)[0];
+        setTimeout(() => {
+            element.remove();
+        }, delay);
+        delay /= 2;
+    }
+}
